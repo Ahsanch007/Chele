@@ -11,6 +11,10 @@
     <!-- Open Sans font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
@@ -21,21 +25,19 @@
     <header class="header-section">
         <div class="container">
             <div class="d-flex justify-content-between">
-
                 <div class="logo">
-
-
+                    <img src="assets/images/Volker Kaechele_Logo_weiss-79310492.webp" alt="">
                 </div>
                 <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-
-                        <li class="item-101 "><a href="index.html"> Home</a></li>
+                    <ul class="uk-navbar-nav" id="myNav">
+                        <div class="cross" onclick="closemenu()"><i class="fa-solid fa-xmark"></i></div>
+                        <li class="item-101"><a href="/#"> Home</a></li>
                         <li class="item-102"><a href="leistungen.html"> Leistungen</a></li>
                         <li class="item-103 uk-active"><a href="referenzen.html"> Referenzen</a></li>
                         <li class="item-104"><a href="kontakt.html"> Kontakt</a></li>
                     </ul>
                 </div>
-                <div class="mob">
+                <div class="mob" onclick="mobnav();">
                     <a uk-toggle="" href="#tm-dialog-mobile" class="uk-navbar-toggle" role="button"
                         aria-label="Open menu">
 
@@ -60,9 +62,77 @@
 
     <!-- main section  -->
 
-    <section class="companies">
+    <section class="companies mb-5">
         <div class="position-absolute bg-col">
-
+            
+        </div>
+    </section>
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="company-imgs">
+                <div class="row text-center align-middle icons-div" style="display: flex; align-items: center;">
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/1.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/2.gif" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/3.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/4.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/5.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/6.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/7.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/8.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/9.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/10.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/11.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/12.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/13.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/14.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/15.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/16.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/17.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/18.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/19.webp" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 py-3">
+                        <img src="assets/images/20.webp" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -114,5 +184,19 @@
     <!-- Bootstrap JS bundle (popper.js included) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<script>
+    function mobnav() {
+        let myNav = document.getElementById("myNav");
+        if (myNav.className === "uk-navbar-nav") {
+            myNav.classList += " responsive";
+        } else {
+            myNav.classList = "uk-navbar-nav";
+        }
+    }
+    function closemenu() {
+        let myNav = document.getElementById("myNav");
+        myNav.classList.remove("responsive");
 
+    }
+</script>
 </html>
