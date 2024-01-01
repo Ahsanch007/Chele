@@ -1,8 +1,121 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
+    overflow-x: hidden;
 }
 
 
+/* Open Sans */
+.font-open-sans-300 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300;
+}
+
+.font-open-sans-400 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+}
+
+.font-open-sans-500 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500;
+}
+
+.font-open-sans-600 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 600;
+}
+
+.font-open-sans-700 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+.font-open-sans-800 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 800;
+}
+
+.font-open-sans-900 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 900;
+}
+
+/* Roboto */
+.font-roboto-300 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+}
+
+.font-roboto-400 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
+}
+
+.font-roboto-500 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+}
+
+.font-roboto-600 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600;
+}
+
+.font-roboto-700 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700;
+}
+
+.font-roboto-800 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 800;
+}
+
+.font-roboto-900 {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 900;
+}
+
+/* Roboto Condensed */
+.font-roboto-condensed-300 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 300;
+}
+
+.font-roboto-condensed-400 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 400;
+}
+
+.font-roboto-condensed-500 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 500;
+}
+
+.font-roboto-condensed-600 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 600;
+}
+
+.font-roboto-condensed-700 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 700;
+}
+
+.font-roboto-condensed-800 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 800;
+}
+
+.font-roboto-condensed-900 {
+    font-family: 'Roboto Condensed', sans-serif !important;
+    font-weight: 900;
+}
+
+
+.font-roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif  !important;
+}
 .header-section {
     padding: 10px 0px;
     position: fixed;
@@ -12,9 +125,9 @@ body {
     width: 100%;
     z-index: 99;
 }
-.logo img{
+/* .logo img{
     width: 84%;
-}
+} */
 .uk-navbar-nav {
     display: flex;
     margin: 0;
@@ -29,12 +142,13 @@ body {
 
 .uk-navbar-nav>li>a {
     padding: 0 0;
-    color: #ccd6e098;
+    color: white;
     transition: .1s ease-in-out;
     position: relative;
     z-index: 1;
     font-weight: 600;
     text-transform: uppercase;
+    font-family: 'Open Sans';
 }
 
 .uk-navbar-nav>li>a {
@@ -109,7 +223,7 @@ body {
     font-size: 22px;
     line-height: 1.5;
     color: #5b5b5b;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 
     font-weight: 700;
     text-transform: none;
@@ -129,7 +243,7 @@ body {
 
 .uk-margin h3 {
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .uk-section-primary {
@@ -188,7 +302,7 @@ body {
 .title {
     font-size: 22px;
     line-height: 1.4;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     font-weight: 700;
     text-transform: uppercase;
     color: #5b5b5b;
@@ -206,7 +320,7 @@ body {
     font-size: 16px;
     font-weight: 300;
     line-height: 1.625;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
 
 }
 
@@ -216,6 +330,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 420px;
+    background-size: cover;
 }
 
 .bg-col {
@@ -336,6 +451,9 @@ body {
         display: inline-block;
         margin-top: 1.5rem;
     }
+    .logo img{
+    width: 200px;
+}
 
     .cross {
         display: flex;
