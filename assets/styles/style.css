@@ -128,6 +128,10 @@ body {
 /* .logo img{
     width: 84%;
 } */
+.logo h1{
+    color: white;
+    font-weight: 900;
+}
 .uk-navbar-nav {
     display: flex;
     margin: 0;
@@ -435,7 +439,12 @@ body {
 }
 
 
-
+.mob{
+    display: none;
+}
+.desk{
+    display: inline-block;
+}
 /* footer-content */
 
 .footer-content{
@@ -451,10 +460,15 @@ body {
         display: inline-block;
         margin-top: 1.5rem;
     }
-    .logo img{
+    /* .logo img{
     width: 200px;
+} */
+.mob{
+    display: inline-block;
 }
-
+.desk{
+    display: none;
+}
     .cross {
         display: flex;
         text-align: right;
@@ -462,6 +476,9 @@ body {
         margin-top: -5rem;
         color: #ccd6e098;
         font-size: 20px;
+        position: absolute;
+        top: 97px;
+        right: 18px;
     }
 
     .container-main {
@@ -513,6 +530,7 @@ body {
         transition: left 2s ease-in-out;
         animation: menumove 0.7s alternate;
         height: 100vh;
+        justify-content: center;
     }
 
     @keyframes menumove {
